@@ -4,7 +4,7 @@
 
 A data scientist and researcher from Kwale, Kenya, finishing an MS in Data Science & Analytics at Grand Valley State University (December 2026). I build the pipelines, models, and dashboards behind decisions that actually reach people — across education, public health, and policy, on two continents.
 
-**🌍 Live site:** https://cece15.github.io/C.-Mutua-Portfolio/
+** Live site:** https://cece15.github.io/C.-Mutua-Portfolio/
 
 ---
 
