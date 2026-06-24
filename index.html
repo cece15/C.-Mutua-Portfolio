@@ -87,7 +87,7 @@
     border:1px solid rgba(255,255,255,.6);background:linear-gradient(160deg,var(--lilac-soft),#fff 60%);
     display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
     box-shadow:0 30px 60px -30px rgba(43,34,48,.4)}
-  .frame img{width:100%;height:100%;object-fit:cover}
+  .frame img{width:100%;height:100%;object-fit:cover;object-position:center 38%}
   .frame .ico{width:46px;height:46px;border-radius:50%;border:1.6px solid var(--lilac);display:grid;place-items:center;margin-bottom:.9rem;color:var(--lilac-d);font-size:1.3rem}
   .frame .ph{font-family:var(--elegant);font-style:italic;color:var(--lilac-d);font-size:1.05rem;line-height:1.5;max-width:18ch}
 
@@ -126,6 +126,10 @@
   .pcard:hover{transform:translateY(-4px);box-shadow:0 24px 50px -28px rgba(43,34,48,.45);border-color:transparent}
   .pcard .kick{font-weight:600;font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;margin:0 0 .7rem;display:inline-flex;align-items:center;gap:.5em}
   .pcard .kick::before{content:"";width:9px;height:9px;border-radius:50%;background:currentColor}
+  .pcard .kick .wip{margin-left:.5em;font-size:.66rem;letter-spacing:.05em;color:var(--lilac-d);
+    background:var(--lilac-soft);padding:.22em .65em;border-radius:999px}
+  .pcard .kick .wip::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;
+    background:var(--lilac-d);margin-right:.45em;vertical-align:middle}
   .a-flame .kick{color:var(--flame-d)} .a-lilac .kick{color:var(--lilac-d)}
   .a-teal .kick{color:var(--teal-d)} .a-gold .kick{color:var(--gold-d)}
   .pcard h3{font-size:1.3rem;line-height:1.15;margin:0 0 .6rem}
@@ -141,6 +145,17 @@
   .a-flame .more{color:var(--flame-d)} .a-lilac .more{color:var(--lilac-d)} .a-teal .more{color:var(--teal-d)} .a-gold .more{color:var(--gold-d)}
   .pcard .more .arr{transition:transform .18s ease}
   .pcard:hover .more .arr{transform:translateX(4px)}
+
+  /* ---------- honorable mentions ---------- */
+  .mentions{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.4rem,3.5vw,2.8rem);margin-top:2rem}
+  .hm{border-top:2px solid var(--line);padding-top:1.2rem}
+  .hm-org{font-weight:600;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--lilac-d);margin:0 0 .5rem;display:inline-flex;align-items:center;gap:.5em}
+  .hm-org::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--lilac-d)}
+  .hm h3{font-size:1.2rem;margin:0 0 .35rem}
+  .hm-role{font-family:var(--elegant);font-style:italic;color:var(--mute);margin:0 0 .7rem;font-size:.98rem}
+  .hm-desc{color:var(--mute);font-size:.95rem;line-height:1.6;margin:0;max-width:50ch}
+  .work-note{margin-top:2.4rem;font-size:.9rem;color:var(--mute);max-width:60ch;font-style:italic;font-family:var(--elegant)}
+  @media (max-width:840px){.mentions{grid-template-columns:1fr;gap:1.4rem}}
 
   /* ---------- approach ---------- */
   .approach{background:var(--ink);color:var(--ivory);border-radius:28px;margin:0 auto;
@@ -256,9 +271,7 @@
     <div class="portrait reveal">
       <div class="halo" aria-hidden="true"></div>
       <div class="frame">
-        <!-- Replace this block with: <img src="photo.jpg" alt="Cynthia Mutua" /> -->
-        <div class="ico" aria-hidden="true">✦</div>
-        <p class="ph">your photo here —<br>bright, warm, unmistakably you</p>
+        <img src="cynthia-hero.jpg" alt="Cynthia Mutua, smiling, with the New York City skyline behind her" />
       </div>
     </div>
   </section>
@@ -299,39 +312,13 @@
     <div class="work-head reveal">
       <div>
         <p class="seyebrow lilac">Selected work</p>
-        <h2 class="shead">Six projects, one habit.</h2>
-        <p>Turning messy, real-world data into something a human can actually act on.</p>
+        <h2 class="shead">Work I own, end to end.</h2>
+        <p>Projects I built myself — where I can open up the data, the methods, and the messy parts.</p>
       </div>
       <a class="btn lilac" href="https://github.com/cece15">All projects on GitHub</a>
     </div>
 
     <div class="work-grid">
-      <a class="pcard a-flame reveal" href="#" aria-label="OPT Career Intelligence Agent — read the case">
-        <p class="kick">Agentic AI · Immigration</p>
-        <h3>OPT Career Intelligence Agent</h3>
-        <p class="desc">An agentic system grounded in real USCIS H-1B data that helps international students find employers who actually sponsor visas. I built it because I needed it — and caught it giving insensitive advice, then fixed that too.</p>
-        <div class="metrics">
-          <div class="m"><div class="n">H-1B</div><div class="l">real USCIS data</div></div>
-          <div class="m"><div class="n">Agentic</div><div class="l">retrieval + reasoning</div></div>
-          <div class="m"><div class="n">Capstone</div><div class="l">MS, 2026</div></div>
-        </div>
-        <div class="tags"><span>Python</span><span>LLM agents</span><span>USCIS data</span></div>
-        <span class="more">Read the case <span class="arr" aria-hidden="true">→</span></span>
-      </a>
-
-      <a class="pcard a-lilac reveal" href="#" aria-label="Teacher Burnout Validation Study — read the case">
-        <p class="kick">Research · MIT Blueprint Labs</p>
-        <h3>Teacher Burnout Validation Study</h3>
-        <p class="desc">Replicated a published methodology on real GVSU charter data — EFA → CFA → LPA → multinomial regression on 208 educators — surfacing three burnout profiles and the strongest modifiable lever. Discovery, not reporting.</p>
-        <div class="metrics">
-          <div class="m"><div class="n">208</div><div class="l">educators</div></div>
-          <div class="m"><div class="n">3</div><div class="l">burnout profiles</div></div>
-          <div class="m"><div class="n">82%</div><div class="l">risk reduction</div></div>
-        </div>
-        <div class="tags"><span>R</span><span>lavaan</span><span>tidymodels</span></div>
-        <span class="more">Read the case <span class="arr" aria-hidden="true">→</span></span>
-      </a>
-
       <a class="pcard a-teal reveal" href="#" aria-label="Alzheimer's Disease Pattern Discovery — read the case">
         <p class="kick">Machine learning · Clinical</p>
         <h3>Alzheimer's Pattern Discovery</h3>
@@ -383,7 +370,44 @@
         <div class="tags"><span>Python</span><span>SQL</span><span>BigQuery</span></div>
         <span class="more">Read the case <span class="arr" aria-hidden="true">→</span></span>
       </a>
+
+      <a class="pcard a-flame reveal" href="#" aria-label="OPT Career Intelligence Agent — in progress">
+        <p class="kick">Agentic AI · Immigration <span class="wip">Building now</span></p>
+        <h3>OPT Career Intelligence Agent</h3>
+        <p class="desc">An agentic system grounded in real USCIS H-1B data that helps international students find employers who actually sponsor visas. I'm building it because I needed it — and when an early version gave insensitive advice, I caught it and fixed that too.</p>
+        <div class="metrics">
+          <div class="m"><div class="n">H-1B</div><div class="l">real USCIS data</div></div>
+          <div class="m"><div class="n">Agentic</div><div class="l">retrieval + reasoning</div></div>
+          <div class="m"><div class="n">2026</div><div class="l">MS capstone</div></div>
+        </div>
+        <div class="tags"><span>Python</span><span>LLM agents</span><span>USCIS data</span></div>
+        <span class="more">Follow the build <span class="arr" aria-hidden="true">→</span></span>
+      </a>
     </div>
+  </section>
+
+  <!-- RESEARCH & PROFESSIONAL (honorable mentions) -->
+  <section class="section" id="research">
+    <p class="seyebrow teal reveal">Research &amp; professional work</p>
+    <h2 class="shead reveal">Work I've contributed to — not owned.</h2>
+    <p class="reveal" style="color:var(--mute);max-width:54ch;margin:0">Studies and roles with research labs and employers. I can share my role and the kind of work — but the data and methods belong to the project, so these stay deliberately high-level. Happy to talk through any of them directly.</p>
+
+    <div class="mentions">
+      <div class="hm reveal">
+        <p class="hm-org">GVSU · Blueprint Labs (MIT)</p>
+        <h3>Teacher burnout &amp; retention research</h3>
+        <p class="hm-role">My role — data scientist on the research team</p>
+        <p class="hm-desc">Contributed to a validation study modeling educator burnout and its drivers on real charter-school data, using latent-profile and regression methods. The dataset and approach belong to the project, so I keep the specifics offline — but I'm glad to walk through my contribution in conversation.</p>
+      </div>
+      <div class="hm reveal">
+        <p class="hm-org">Kenya Institute of Curriculum Development</p>
+        <h3>National curriculum &amp; inclusive-education research</h3>
+        <p class="hm-role">My role — data analyst &amp; researcher</p>
+        <p class="hm-desc">Situational analysis of student-to-textbook ratios to optimize allocation across Kenyan schools, and data processing for ICT and Special Needs Education integration — plus science-and-innovation work toward the CBC system in collaboration with NACOSTI. Government data, so this stays high-level.</p>
+      </div>
+    </div>
+
+    <p class="work-note reveal">More client and coursework lives on my <a href="https://github.com/cece15" style="color:var(--flame-d);border-bottom:1px solid var(--flame)">GitHub</a> — and I'm happy to share what's shareable on request.</p>
   </section>
 
   <!-- APPROACH -->
@@ -476,7 +500,7 @@
       <a class="btn solid" href="https://linkedin.com/in/cynthia-mutua">Connect on LinkedIn</a>
       <a class="btn" href="https://github.com/cece15">See the code</a>
     </div>
-    <a class="email reveal" href="mailto:cmm.mutua@gmail.com">cmm.mutua@gmail.com</a>
+    <a class="email reveal" href="mailto:cmutuaa@gmail.com">cmutuaa@gmail.com</a>
   </section>
 
 </main>
@@ -488,7 +512,7 @@
     <span class="flinks">
       <a href="https://linkedin.com/in/cynthia-mutua">LinkedIn</a>
       <a href="https://github.com/cece15">GitHub</a>
-      <a href="mailto:cmm.mutua@gmail.com">Email</a>
+      <a href="mailto:cmutuaa@gmail.com">Email</a>
     </span>
   </div>
 </footer>
