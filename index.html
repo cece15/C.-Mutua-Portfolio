@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Cynthia Mutua — Data Scientist &amp; Researcher</title>
-<meta name="description" content="Cynthia Mutua — data scientist and researcher from Kwale, Kenya. I use rigorous data work to open futures for the people most systems overlook. Available Fall 2026." />
+<title>Cynthia Mutua · Data Scientist &amp; Researcher</title>
+<meta name="description" content="Cynthia Mutua, data scientist and researcher from Kwale, Kenya. I use rigorous data work to open futures for the people most systems overlook. Available Fall 2026." />
 <script>document.documentElement.className="js";</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,12 +16,9 @@
 
   :root{
     --ivory:#FFF8F0; --card:#FFFDFA; --ink:#2B2230; --mute:rgba(43,34,48,.62);
-    --flame:#FF5A45; --flame-d:#E23B26;
-    --lilac:#A98BE0; --lilac-d:#7E5FC0; --lilac-soft:#EBE1FB;
-    --gold:#FFC23C; --gold-d:#D99400; --teal:#16B79A; --teal-d:#0A8475;
-    --line:rgba(43,34,48,.12);
-    --display:"Bricolage Grotesque",Georgia,serif;
-    --elegant:"Fraunces",Georgia,serif;
+    --flame:#FF5A45; --flame-d:#E23B26; --lilac:#A98BE0; --lilac-d:#7E5FC0; --lilac-soft:#EBE1FB;
+    --gold:#FFC23C; --gold-d:#D99400; --teal:#16B79A; --teal-d:#0A8475; --line:rgba(43,34,48,.12);
+    --display:"Bricolage Grotesque",Georgia,serif; --elegant:"Fraunces",Georgia,serif;
     --sans:"Mona Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   }
   *{box-sizing:border-box}
@@ -33,28 +30,26 @@
   a:focus-visible,button:focus-visible{outline:2.5px solid var(--lilac-d);outline-offset:3px;border-radius:4px}
   ::selection{background:var(--gold);color:var(--ink)}
   h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:-.02em}
-  section{scroll-margin-top:90px}
+  section{scroll-margin-top:84px}
 
   /* ---------- nav ---------- */
   .topbar{position:sticky;top:0;z-index:50;background:rgba(255,248,240,.82);
     backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
   .topbar.scrolled{border-color:var(--line)}
-  .topbar-in{display:flex;align-items:center;justify-content:space-between;
-    padding:1.05rem 0;gap:1.4rem;flex-wrap:wrap}
-  .wordmark{font-family:var(--display);font-weight:700;font-size:1.18rem}
+  .topbar-in{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0;gap:1.5rem;flex-wrap:wrap}
+  .wordmark{font-family:var(--display);font-weight:700;font-size:1.15rem}
   .wordmark .dot{color:var(--flame)}
   .nav{display:flex;align-items:center;gap:clamp(.85rem,2vw,1.6rem);flex-wrap:wrap}
-  .nav a{font-size:.86rem;color:var(--mute);font-weight:500}
+  .nav a{font-size:.85rem;color:var(--mute);font-weight:500}
   .nav a:hover{color:var(--ink)}
   .pill{display:inline-flex;align-items:center;gap:.5em;font-size:.78rem;font-weight:600;
     color:var(--flame-d);background:rgba(255,90,69,.1);border:1.5px solid rgba(255,90,69,.45);
     padding:.45em .9em;border-radius:999px;white-space:nowrap}
   .pill .dot{width:8px;height:8px;border-radius:50%;background:var(--flame)}
-  .nav .quiet{display:none}
   @media (max-width:620px){.nav a:not(.pill-link){display:none}}
 
   /* ---------- buttons ---------- */
-  .btn{font-family:var(--sans);font-weight:600;font-size:.93rem;padding:.82em 1.5em;
+  .btn{font-family:var(--sans);font-weight:600;font-size:.92rem;padding:.78em 1.45em;
     border-radius:999px;border:1.5px solid var(--ink);transition:transform .14s ease,background .2s,color .2s;display:inline-block}
   .btn:hover{transform:translateY(-2px)}
   .btn.solid{background:var(--flame);color:#fff;border-color:var(--flame)}
@@ -63,68 +58,64 @@
   .btn.lilac:hover{background:#6A4DAD;border-color:#6A4DAD}
 
   /* ---------- hero ---------- */
-  .hero{display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(2rem,5vw,4rem);
-    align-items:center;padding:clamp(2.4rem,6vw,4.5rem) 0 clamp(1.6rem,4vw,2.6rem)}
-  .eyebrow{font-family:var(--sans);font-weight:600;font-size:.82rem;letter-spacing:.13em;
-    text-transform:uppercase;color:var(--mute);margin:0 0 1.5rem;display:flex;gap:.7rem;flex-wrap:wrap;align-items:center}
+  .hero{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(1.6rem,4vw,3.4rem);
+    align-items:center;padding:clamp(1.4rem,3vw,2.6rem) 0 clamp(1.4rem,3vw,2.2rem);min-height:calc(100vh - 120px)}
+  .eyebrow{font-family:var(--sans);font-weight:600;font-size:.8rem;letter-spacing:.13em;
+    text-transform:uppercase;color:var(--mute);margin:0 0 1.1rem;display:flex;gap:.7rem;flex-wrap:wrap;align-items:center}
   .eyebrow .go{color:var(--lilac-d)}
-  .hero h1{font-size:clamp(2.5rem,5.3vw,4.3rem);line-height:1.04;margin:0 0 1.5rem;max-width:15ch}
+  .hero h1{font-size:clamp(2.2rem,4.3vw,3.5rem);line-height:1.05;margin:0 0 1.2rem;max-width:15ch}
   .hero h1 .hl{position:relative;color:var(--flame);white-space:nowrap}
-  .hero h1 .hl svg{position:absolute;left:-2%;width:104%;bottom:-.16em;height:.3em;overflow:visible}
-  .sub{font-size:clamp(1.02rem,1.4vw,1.16rem);line-height:1.62;max-width:50ch;margin:0 0 1rem}
-  .sub b{font-weight:600}
-  .aside{font-family:var(--elegant);font-style:italic;font-size:1.12rem;color:var(--mute);margin:0 0 1.9rem}
-  .cta{display:flex;align-items:center;gap:.9rem;flex-wrap:wrap}
+  .hero h1 .hl svg{position:absolute;left:-2%;width:104%;bottom:-.14em;height:.28em;overflow:visible}
+  .sub{font-size:1.06rem;line-height:1.66;max-width:48ch;margin:0 0 .9rem}
+  .sub .who{color:var(--flame-d);font-weight:600}
+  .aside{font-family:var(--elegant);font-style:italic;font-size:1.1rem;color:var(--mute);margin:0 0 1.6rem}
+  .cta{display:flex;align-items:center;gap:.8rem;flex-wrap:wrap}
 
-  .portrait{position:relative;justify-self:center;width:min(100%,420px);aspect-ratio:4/5}
-  .halo{position:absolute;inset:-14% -10% -10% -14%;border-radius:50%;filter:blur(34px);opacity:.85;z-index:0;
+  .portrait{position:relative;justify-self:center;width:min(100%,380px);aspect-ratio:4/5}
+  .halo{position:absolute;inset:-13% -10% -9% -13%;border-radius:50%;filter:blur(34px);opacity:.85;z-index:0;
     background:
       radial-gradient(40% 45% at 30% 30%, var(--lilac) 0%, transparent 70%),
       radial-gradient(45% 45% at 75% 35%, var(--gold) 0%, transparent 70%),
       radial-gradient(55% 55% at 60% 80%, var(--flame) 0%, transparent 72%);
     animation:drift 14s ease-in-out infinite alternate}
-  .frame{position:relative;z-index:1;width:100%;height:100%;border-radius:170px 170px 22px 22px;overflow:hidden;
+  .frame{position:relative;z-index:1;width:100%;height:100%;border-radius:160px 160px 22px 22px;overflow:hidden;
     border:1px solid rgba(255,255,255,.6);background:linear-gradient(160deg,var(--lilac-soft),#fff 60%);
-    display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
     box-shadow:0 30px 60px -30px rgba(43,34,48,.4)}
-  .frame img{width:100%;height:100%;object-fit:cover;object-position:center 38%}
-  .frame .ico{width:46px;height:46px;border-radius:50%;border:1.6px solid var(--lilac);display:grid;place-items:center;margin-bottom:.9rem;color:var(--lilac-d);font-size:1.3rem}
-  .frame .ph{font-family:var(--elegant);font-style:italic;color:var(--lilac-d);font-size:1.05rem;line-height:1.5;max-width:18ch}
+  .frame img{width:100%;height:100%;object-fit:cover;object-position:center 36%}
 
   /* ---------- credential strip ---------- */
   .creds{display:flex;flex-wrap:wrap;gap:clamp(1.2rem,3vw,2.4rem);align-items:center;
-    border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1.3rem 0}
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:1.15rem 0}
   .creds .lab{font-weight:600;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
   .creds .item{display:flex;align-items:baseline;gap:.5rem;font-weight:500;font-size:.92rem}
   .creds .item .k{color:var(--flame);font-family:var(--display);font-weight:700}
   .creds .sep{color:var(--line)}
 
   /* ---------- generic section ---------- */
-  .section{padding:clamp(3.6rem,8vw,6.5rem) 0}
-  .seyebrow{font-weight:600;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--flame-d);margin:0 0 1.2rem}
+  .section{padding:clamp(2.4rem,5vw,4rem) 0}
+  .seyebrow{font-weight:600;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--flame-d);margin:0 0 1.1rem}
   .seyebrow.lilac{color:var(--lilac-d)} .seyebrow.teal{color:var(--teal-d)} .seyebrow.gold{color:var(--gold-d)}
-  .shead{font-size:clamp(1.9rem,3.6vw,2.9rem);line-height:1.08;margin:0 0 1.4rem;max-width:18ch}
+  .shead{font-size:clamp(1.8rem,3.4vw,2.7rem);line-height:1.1;margin:0 0 1.3rem;max-width:20ch}
 
   /* ---------- the why ---------- */
-  .why{position:relative}
-  .why .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:start}
-  .why p{font-size:1.06rem;line-height:1.72;margin:0 0 1.2rem;max-width:54ch}
+  .why .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+  .why p{font-size:1.05rem;line-height:1.72;margin:0 0 1.2rem;max-width:54ch}
   .pullquote{font-family:var(--elegant);font-style:italic;font-weight:500;
-    font-size:clamp(1.5rem,2.8vw,2.15rem);line-height:1.3;color:var(--ink);margin:0;
+    font-size:clamp(1.45rem,2.6vw,2.05rem);line-height:1.3;color:var(--ink);margin:0 0 1.6rem;
     padding-left:1.3rem;border-left:3px solid var(--flame)}
   .pullquote .accent{color:var(--flame-d)}
-  .why .future{margin-top:1.8rem;background:var(--lilac-soft);border-radius:18px;padding:1.5rem 1.6rem}
-  .why .future .t{font-family:var(--display);font-weight:600;font-size:1.05rem;margin:0 0 .5rem;color:var(--lilac-d)}
-  .why .future p{font-size:.98rem;margin:0;color:var(--ink)}
+  .why .cherry{background:var(--lilac-soft);border-radius:18px;padding:1.5rem 1.6rem}
+  .why .cherry .t{font-family:var(--display);font-weight:600;font-size:1.05rem;margin:0 0 .5rem;color:var(--lilac-d)}
+  .why .cherry p{font-size:.99rem;margin:0;color:var(--ink)}
 
   /* ---------- work ---------- */
-  .work-head{display:flex;justify-content:space-between;align-items:flex-end;gap:1.5rem;flex-wrap:wrap;margin-bottom:2.6rem}
+  .work-head{display:flex;justify-content:space-between;align-items:flex-end;gap:1.5rem;flex-wrap:wrap;margin-bottom:2.2rem}
   .work-head p{max-width:42ch;margin:.4rem 0 0;color:var(--mute)}
-  .work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(1.1rem,2.4vw,1.8rem)}
-  .pcard{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:1.7rem 1.7rem 1.5rem;
+  .work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(1.1rem,2.4vw,1.6rem)}
+  .pcard{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:1.6rem 1.6rem 1.4rem;
     display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .25s ease,border-color .25s}
   .pcard:hover{transform:translateY(-4px);box-shadow:0 24px 50px -28px rgba(43,34,48,.45);border-color:transparent}
-  .pcard .kick{font-weight:600;font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;margin:0 0 .7rem;display:inline-flex;align-items:center;gap:.5em}
+  .pcard .kick{font-weight:600;font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;margin:0 0 .7rem;display:inline-flex;align-items:center;gap:.5em;flex-wrap:wrap}
   .pcard .kick::before{content:"";width:9px;height:9px;border-radius:50%;background:currentColor}
   .pcard .kick .wip{margin-left:.5em;font-size:.66rem;letter-spacing:.05em;color:var(--lilac-d);
     background:var(--lilac-soft);padding:.22em .65em;border-radius:999px}
@@ -132,8 +123,8 @@
     background:var(--lilac-d);margin-right:.45em;vertical-align:middle}
   .a-flame .kick{color:var(--flame-d)} .a-lilac .kick{color:var(--lilac-d)}
   .a-teal .kick{color:var(--teal-d)} .a-gold .kick{color:var(--gold-d)}
-  .pcard h3{font-size:1.3rem;line-height:1.15;margin:0 0 .6rem}
-  .pcard .desc{font-size:.96rem;color:var(--mute);line-height:1.55;margin:0 0 1.1rem;flex:1}
+  .pcard h3{font-size:1.28rem;line-height:1.15;margin:0 0 .6rem}
+  .pcard .desc{font-size:.95rem;color:var(--mute);line-height:1.55;margin:0 0 1.1rem;flex:1}
   .pcard .metrics{display:flex;gap:1.3rem;flex-wrap:wrap;margin:0 0 1.1rem}
   .pcard .metrics .m .n{font-family:var(--display);font-weight:700;font-size:1.2rem;line-height:1}
   .a-flame .metrics .m .n{color:var(--flame)} .a-lilac .metrics .m .n{color:var(--lilac-d)}
@@ -141,7 +132,7 @@
   .pcard .metrics .m .l{font-size:.72rem;color:var(--mute);margin-top:.2rem}
   .pcard .tags{display:flex;gap:.4rem;flex-wrap:wrap;margin:0 0 1.2rem}
   .pcard .tags span{font-size:.74rem;font-weight:500;color:var(--mute);border:1px solid var(--line);padding:.25em .65em;border-radius:999px}
-  .pcard .more{font-weight:600;font-size:.9rem;color:var(--ink);display:inline-flex;align-items:center;gap:.4em}
+  .pcard .more{font-weight:600;font-size:.9rem;display:inline-flex;align-items:center;gap:.4em}
   .a-flame .more{color:var(--flame-d)} .a-lilac .more{color:var(--lilac-d)} .a-teal .more{color:var(--teal-d)} .a-gold .more{color:var(--gold-d)}
   .pcard .more .arr{transition:transform .18s ease}
   .pcard:hover .more .arr{transform:translateX(4px)}
@@ -154,39 +145,44 @@
   .hm h3{font-size:1.2rem;margin:0 0 .35rem}
   .hm-role{font-family:var(--elegant);font-style:italic;color:var(--mute);margin:0 0 .7rem;font-size:.98rem}
   .hm-desc{color:var(--mute);font-size:.95rem;line-height:1.6;margin:0;max-width:50ch}
-  .work-note{margin-top:2.4rem;font-size:.9rem;color:var(--mute);max-width:60ch;font-style:italic;font-family:var(--elegant)}
+  .work-note{margin-top:2.2rem;font-size:.92rem;color:var(--mute);max-width:60ch;font-style:italic;font-family:var(--elegant)}
   @media (max-width:840px){.mentions{grid-template-columns:1fr;gap:1.4rem}}
 
   /* ---------- approach ---------- */
-  .approach{background:var(--ink);color:var(--ivory);border-radius:28px;margin:0 auto;
-    padding:clamp(2.6rem,6vw,4.5rem) clamp(1.6rem,5vw,4rem)}
+  .approach{background:var(--ink);color:var(--ivory);border-radius:28px;
+    padding:clamp(2.4rem,5vw,4rem) clamp(1.6rem,5vw,4rem)}
   .approach .seyebrow{color:var(--gold)}
   .approach .shead{color:#fff}
-  .beats{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.4rem,3vw,2.6rem);margin-top:2.4rem}
+  .beats{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.4rem,3vw,2.6rem);margin-top:2.2rem}
   .beat .bt{font-weight:600;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;margin:0 0 .8rem}
   .beat:nth-child(1) .bt{color:var(--teal)} .beat:nth-child(2) .bt{color:var(--gold)} .beat:nth-child(3) .bt{color:var(--flame)}
-  .beat h3{color:#fff;font-size:1.3rem;line-height:1.15;margin:0 0 .6rem}
+  .beat h3{color:#fff;font-size:1.28rem;line-height:1.15;margin:0 0 .6rem}
   .beat p{color:rgba(255,248,240,.7);font-size:.95rem;line-height:1.55;margin:0}
-  .approach .philosophy{margin-top:2.6rem;padding-top:2rem;border-top:1px solid rgba(255,248,240,.18);
-    font-family:var(--elegant);font-style:italic;font-size:clamp(1.15rem,1.8vw,1.45rem);line-height:1.45;color:#fff;max-width:46ch}
+  .approach .philosophy{margin-top:2.4rem;padding-top:1.9rem;border-top:1px solid rgba(255,248,240,.18);
+    font-family:var(--elegant);font-style:italic;font-size:clamp(1.15rem,1.8vw,1.45rem);line-height:1.45;color:#fff;max-width:48ch}
 
   /* ---------- journey ---------- */
   .timeline{position:relative;margin-top:1rem;padding-left:1.6rem}
   .timeline::before{content:"";position:absolute;left:5px;top:.6rem;bottom:.6rem;width:2px;background:var(--line)}
-  .tnode{position:relative;padding:0 0 2rem 1.8rem}
+  .tnode{position:relative;padding:0 0 1.8rem 1.8rem}
   .tnode::before{content:"";position:absolute;left:-1.6rem;top:.35rem;width:13px;height:13px;border-radius:50%;background:var(--flame);box-shadow:0 0 0 4px var(--ivory)}
   .tnode:nth-child(2)::before{background:var(--lilac-d)} .tnode:nth-child(3)::before{background:var(--gold)}
-  .tnode:nth-child(4)::before{background:var(--teal)} .tnode:nth-child(5)::before{background:var(--flame)}
+  .tnode:nth-child(4)::before{background:var(--teal)} .tnode:nth-child(5)::before{background:var(--flame)} .tnode:nth-child(6)::before{background:var(--lilac-d)}
   .tnode .yr{font-weight:600;font-size:.78rem;letter-spacing:.05em;color:var(--mute);text-transform:uppercase}
-  .tnode h3{font-size:1.2rem;margin:.25rem 0 .3rem}
-  .tnode p{margin:0;color:var(--mute);font-size:.96rem;max-width:52ch}
-  .roles{margin-top:1.4rem;display:flex;gap:.55rem;flex-wrap:wrap}
+  .tnode h3{font-size:1.18rem;margin:.25rem 0 .3rem}
+  .tnode p{margin:0;color:var(--mute);font-size:.96rem;max-width:54ch}
+  .subroles{margin-top:1rem;display:flex;flex-direction:column;gap:.85rem}
+  .subroles .sr{padding-left:1rem;border-left:2px solid var(--line)}
+  .subroles .sr .d{font-weight:600;font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--lilac-d);margin-bottom:.18rem}
+  .subroles .sr:nth-child(2) .d{color:var(--teal-d)}
+  .subroles .sr p{margin:0;font-size:.93rem;color:var(--mute)}
+  .roles{margin-top:1.2rem;display:flex;gap:.55rem;flex-wrap:wrap}
   .roles span{font-size:.8rem;font-weight:500;background:var(--lilac-soft);color:var(--lilac-d);padding:.35em .8em;border-radius:999px}
 
   /* ---------- off the clock ---------- */
   .life .shead{max-width:24ch}
-  .life p{font-size:1.06rem;line-height:1.72;max-width:60ch;color:var(--ink)}
-  .life .chips{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.8rem}
+  .life p{font-size:1.05rem;line-height:1.72;max-width:62ch;color:var(--ink)}
+  .life .chips{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.6rem}
   .life .chips span{font-weight:500;font-size:.9rem;padding:.5em 1em;border-radius:999px;border:1.5px solid var(--line)}
   .life .chips span:nth-child(5n+1){color:var(--flame-d);border-color:rgba(255,90,69,.4)}
   .life .chips span:nth-child(5n+2){color:var(--lilac-d);border-color:rgba(169,139,224,.5)}
@@ -194,20 +190,20 @@
   .life .chips span:nth-child(5n+4){color:var(--gold-d);border-color:rgba(255,194,60,.6)}
 
   /* ---------- contact ---------- */
-  .contact{position:relative;text-align:center;padding:clamp(3.6rem,8vw,6rem) 0}
-  .contact .halo2{position:absolute;left:50%;top:30%;width:520px;height:320px;transform:translateX(-50%);
+  .contact{position:relative;text-align:center;padding:clamp(2.8rem,6vw,4.5rem) 0}
+  .contact .halo2{position:absolute;left:50%;top:28%;width:520px;height:320px;transform:translateX(-50%);
     filter:blur(60px);opacity:.5;z-index:0;border-radius:50%;
     background:radial-gradient(40% 50% at 35% 40%,var(--lilac),transparent 70%),radial-gradient(45% 50% at 70% 60%,var(--flame),transparent 70%)}
   .contact>*{position:relative;z-index:1}
   .contact h2{font-size:clamp(2.1rem,4.5vw,3.4rem);margin:0 auto 1rem;max-width:18ch}
-  .contact .lead{color:var(--mute);max-width:46ch;margin:0 auto 1.2rem;font-size:1.06rem}
-  .contact .roles2{font-family:var(--elegant);font-style:italic;color:var(--ink);margin:0 auto 2rem;max-width:40ch}
+  .contact .lead{color:var(--mute);max-width:46ch;margin:0 auto 1.2rem;font-size:1.05rem}
+  .contact .roles2{font-family:var(--elegant);font-style:italic;color:var(--ink);margin:0 auto 2rem;max-width:42ch}
   .contact .cta{justify-content:center}
   .contact .email{font-family:var(--display);font-weight:700;font-size:clamp(1.3rem,3vw,2rem);color:var(--flame-d);display:inline-block;margin-top:1.6rem}
   .contact .email:hover{color:var(--flame)}
 
   /* ---------- footer ---------- */
-  footer{border-top:1px solid var(--line);padding:2.2rem 0 3rem}
+  footer{border-top:1px solid var(--line);padding:2rem 0 3rem}
   .foot-in{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:center;color:var(--mute);font-size:.85rem}
   .foot-in .el{font-family:var(--elegant);font-style:italic;color:var(--flame-d)}
   .foot-in .flinks{display:flex;gap:1.1rem}
@@ -215,8 +211,8 @@
 
   /* ---------- responsive ---------- */
   @media (max-width:840px){
-    .hero{grid-template-columns:1fr;gap:2.4rem}
-    .portrait{order:-1;width:min(76%,320px)}
+    .hero{grid-template-columns:1fr;gap:2rem;min-height:0}
+    .portrait{order:-1;width:min(72%,300px)}
     .why .grid{grid-template-columns:1fr;gap:1.6rem}
     .work-grid{grid-template-columns:1fr}
     .beats{grid-template-columns:1fr;gap:1.6rem}
@@ -260,11 +256,11 @@
     <div>
       <p class="eyebrow reveal">Data scientist &amp; researcher <span aria-hidden="true">·</span> <span class="go">Kwale, Kenya → the world</span></p>
       <h1 class="reveal">I use data to open <span class="hl">futures<svg viewBox="0 0 220 12" preserveAspectRatio="none" aria-hidden="true"><path class="draw" d="M2,8 C50,3 90,10 130,6 C170,3 200,9 218,5" fill="none" stroke="#FF5A45" stroke-width="4" stroke-linecap="round"/></svg></span> for the people most systems overlook.</h1>
-      <p class="sub reveal">I'm Cynthia — a mathematician turned data scientist from Kwale, Kenya, finishing my MS at GVSU. I build the pipelines, models, and dashboards behind decisions that actually reach people: <b>girls in classrooms, international students chasing visas, communities that rarely get counted.</b> Rigorous about the work, genuinely delighted by the hard parts.</p>
-      <p class="aside reveal">(and yes — DAX measures appear in my dreams.)</p>
+      <p class="sub reveal">I'm Cynthia, a mathematician turned data scientist from Kwale, Kenya, finishing my MS at GVSU. I build the pipelines, models, and dashboards behind decisions that actually reach people: <span class="who">girls in classrooms, international students chasing visas, communities that rarely get counted.</span> Rigorous about the work, genuinely delighted by the hard parts.</p>
+      <p class="aside reveal">(and yes: DAX measures appear in my dreams.)</p>
       <div class="cta reveal">
         <a class="btn solid" href="#work">See the work</a>
-        <a class="btn" href="https://linkedin.com/in/cynthia-mutua">LinkedIn</a>
+        <a class="btn" href="https://www.linkedin.com/in/cynthia-mutua/">LinkedIn</a>
         <a class="btn" href="https://github.com/cece15">GitHub</a>
       </div>
     </div>
@@ -293,15 +289,15 @@
     <div class="grid">
       <div class="reveal">
         <p class="seyebrow">The why</p>
-        <h2 class="shead">It started with a number that shouldn't have existed.</h2>
-        <p>In 2017 I joined a campaign in Kwale County — my home — analyzing school enrollment data. The numbers said girls were starting grade one at thirteen, fourteen, sixteen. The cause turned out to be almost unbearably ordinary: without sanitary products, girls missed days, then weeks, then stopped coming. That finding helped bring monthly sanitary-towel distribution to those schools.</p>
-        <p>That's when data stopped being math to me and became a door. Everything since has been the same work in different clothes — national curriculum reform at Kenya's KICD, teacher burnout and student outcomes at GVSU, an AI agent I built to help international students like me find visa sponsors. Different datasets, same question.</p>
+        <h2 class="shead">The dream came first; the data gave me a way to chase it.</h2>
+        <p>Growing up in Kwale, I watched girls quietly disappear from school for reasons no one was counting. One was as ordinary as a missing pack of sanitary towels: without them, girls missed days, then weeks, then stopped coming back at all. I wanted to fix that long before I knew what a regression was.</p>
+        <p>Years later, the data finally gave me a way. In a community enrollment campaign back home, the numbers made the invisible visible: girls starting grade one at thirteen and fourteen, attendance dropping around those same missing essentials. Putting hard evidence behind it helped turn quiet concern into action, and helped bring monthly sanitary-towel distribution into those schools.</p>
       </div>
       <div class="reveal">
-        <blockquote class="pullquote">Who is being missed — <span class="accent">and what would it take to reach them?</span></blockquote>
-        <div class="future">
-          <p class="t">Where this is going</p>
-          <p>One day I want to take this home: an early-warning system that flags girls at risk of dropping out before they vanish from the rolls — built on data Kenyan schools already collect. I'd rather choose a career by its impact than its salary.</p>
+        <blockquote class="pullquote">Who is being missed, <span class="accent">and what would it take to reach them?</span></blockquote>
+        <div class="cherry">
+          <p class="t">When the dream became real</p>
+          <p>At Kenya's Institute of Curriculum Development, that question became my full-time job: national student data, special-needs fieldwork across the country, analysis that shaped real curriculum and inclusion decisions. For the first time, my work was changing outcomes for thousands of students I would never meet. That is still the whole point of all of it.</p>
         </div>
       </div>
     </div>
@@ -313,13 +309,13 @@
       <div>
         <p class="seyebrow lilac">Selected work</p>
         <h2 class="shead">Work I own, end to end.</h2>
-        <p>Projects I built myself — where I can open up the data, the methods, and the messy parts.</p>
+        <p>Projects I built myself, where I can open up the data, the methods, and the messy parts.</p>
       </div>
       <a class="btn lilac" href="https://github.com/cece15">All projects on GitHub</a>
     </div>
 
     <div class="work-grid">
-      <a class="pcard a-teal reveal" href="#" aria-label="Alzheimer's Disease Pattern Discovery — read the case">
+      <a class="pcard a-teal reveal" href="https://cece15.github.io/Pattern-Discovery-in-Alzheimer-s-Disease-A-Knowledge-Discovery-and-Data-Mining-Approach/" aria-label="Alzheimer's Disease Pattern Discovery">
         <p class="kick">Machine learning · Clinical</p>
         <h3>Alzheimer's Pattern Discovery</h3>
         <p class="desc">A full Knowledge Discovery pipeline on 2,149 patients reaching 93.8% accuracy with a decision tree you can actually read. When clustering failed, I reframed it as a finding about disease continuity.</p>
@@ -332,10 +328,10 @@
         <span class="more">Read the case <span class="arr" aria-hidden="true">→</span></span>
       </a>
 
-      <a class="pcard a-gold reveal" href="#" aria-label="Educational Equity & Family Engagement — read the case">
+      <a class="pcard a-gold reveal" href="https://mutuac-bit.github.io/educational-equity-family-engagement/" aria-label="Educational Equity and Family Engagement">
         <p class="kick">Statistical modeling · Policy</p>
         <h3>Equity &amp; Family Engagement</h3>
-        <p class="desc">25,391 students across five Generalized Linear Models: family engagement gives an 18% stronger protective effect for low-income students (p = 0.009), replicated across four models — with direct implications for targeted interventions.</p>
+        <p class="desc">25,391 students across five Generalized Linear Models: family engagement gives an 18% stronger protective effect for low-income students (p = 0.009), replicated across four models, with direct implications for targeted interventions.</p>
         <div class="metrics">
           <div class="m"><div class="n">25K</div><div class="l">students</div></div>
           <div class="m"><div class="n">18%</div><div class="l">stronger effect</div></div>
@@ -345,10 +341,10 @@
         <span class="more">Read the case <span class="arr" aria-hidden="true">→</span></span>
       </a>
 
-      <a class="pcard a-flame reveal" href="#" aria-label="Poverty & Gun Violence — read the case">
+      <a class="pcard a-flame reveal" href="https://cece15.github.io/Gun-Violence-Poverty-Analysis/" aria-label="Poverty and Gun Violence">
         <p class="kick">Statistical inference</p>
         <h3>Poverty &amp; Gun Violence</h3>
-        <p class="desc">Merged Census ACS data with 100,000+ gun-violence incidents across 50 states. Permutation tests, a 10,000-sample bootstrap, and Welch's t-test showed poverty predicts gun-violence rates — population does not.</p>
+        <p class="desc">Merged Census ACS data with 100,000+ gun-violence incidents across 50 states. Permutation tests, a 10,000-sample bootstrap, and Welch's t-test showed poverty predicts gun-violence rates; population does not.</p>
         <div class="metrics">
           <div class="m"><div class="n">100K+</div><div class="l">incidents</div></div>
           <div class="m"><div class="n">50</div><div class="l">states</div></div>
@@ -358,10 +354,10 @@
         <span class="more">Read the case <span class="arr" aria-hidden="true">→</span></span>
       </a>
 
-      <a class="pcard a-teal reveal" href="#" aria-label="Weather Data ETL Pipeline — read the case">
+      <a class="pcard a-teal reveal" href="https://cece15.github.io/weather-etl-pipeline/" aria-label="Weather Data ETL Pipeline">
         <p class="kick">Data engineering</p>
         <h3>Weather Data ETL Pipeline</h3>
-        <p class="desc">A production pipeline moving 96,000+ records through a five-phase workflow — extraction, transformation, dual-target loading to SQLite and BigQuery, validation, and a self-service Looker dashboard.</p>
+        <p class="desc">A production pipeline moving 96,000+ records through a five-phase workflow: extraction, transformation, dual-target loading to SQLite and BigQuery, validation, and a self-service Looker dashboard.</p>
         <div class="metrics">
           <div class="m"><div class="n">96K+</div><div class="l">records</div></div>
           <div class="m"><div class="n">5</div><div class="l">phases</div></div>
@@ -371,10 +367,10 @@
         <span class="more">Read the case <span class="arr" aria-hidden="true">→</span></span>
       </a>
 
-      <a class="pcard a-flame reveal" href="#" aria-label="OPT Career Intelligence Agent — in progress">
+      <a class="pcard a-flame reveal" href="https://opt-career-intelligence-agent.streamlit.app/" aria-label="OPT Career Intelligence Agent, in progress">
         <p class="kick">Agentic AI · Immigration <span class="wip">Building now</span></p>
         <h3>OPT Career Intelligence Agent</h3>
-        <p class="desc">An agentic system grounded in real USCIS H-1B data that helps international students find employers who actually sponsor visas. I'm building it because I needed it — and when an early version gave insensitive advice, I caught it and fixed that too.</p>
+        <p class="desc">An agentic system grounded in real USCIS H-1B data that helps international students find employers who actually sponsor visas. I'm building it because I needed it; when an early version gave insensitive advice, I caught it and fixed that too.</p>
         <div class="metrics">
           <div class="m"><div class="n">H-1B</div><div class="l">real USCIS data</div></div>
           <div class="m"><div class="n">Agentic</div><div class="l">retrieval + reasoning</div></div>
@@ -386,28 +382,28 @@
     </div>
   </section>
 
-  <!-- RESEARCH & PROFESSIONAL (honorable mentions) -->
+  <!-- RESEARCH & PROFESSIONAL -->
   <section class="section" id="research">
     <p class="seyebrow teal reveal">Research &amp; professional work</p>
-    <h2 class="shead reveal">Work I've contributed to — not owned.</h2>
-    <p class="reveal" style="color:var(--mute);max-width:54ch;margin:0">Studies and roles with research labs and employers. I can share my role and the kind of work — but the data and methods belong to the project, so these stay deliberately high-level. Happy to talk through any of them directly.</p>
+    <h2 class="shead reveal">Work I've contributed to, not owned.</h2>
+    <p class="reveal" style="color:var(--mute);max-width:54ch;margin:0">Studies and roles with research labs and employers. I can share my role and the kind of work, but the data and methods belong to the project, so these stay deliberately high-level. Happy to talk through any of them directly.</p>
 
     <div class="mentions">
       <div class="hm reveal">
         <p class="hm-org">GVSU · Blueprint Labs (MIT)</p>
         <h3>Teacher burnout &amp; retention research</h3>
-        <p class="hm-role">My role — data scientist on the research team</p>
-        <p class="hm-desc">Contributed to a validation study modeling educator burnout and its drivers on real charter-school data, using latent-profile and regression methods. The dataset and approach belong to the project, so I keep the specifics offline — but I'm glad to walk through my contribution in conversation.</p>
+        <p class="hm-role">My role: data scientist on the research team</p>
+        <p class="hm-desc">Contributed to a validation study modeling educator burnout and its drivers on real charter-school data, using latent-profile and regression methods. The dataset and approach belong to the project, so I keep the specifics offline; I'm glad to walk through my contribution in conversation.</p>
       </div>
       <div class="hm reveal">
         <p class="hm-org">Kenya Institute of Curriculum Development</p>
         <h3>National curriculum &amp; inclusive-education research</h3>
-        <p class="hm-role">My role — data analyst &amp; researcher</p>
-        <p class="hm-desc">Situational analysis of student-to-textbook ratios to optimize allocation across Kenyan schools, and data processing for ICT and Special Needs Education integration — plus science-and-innovation work toward the CBC system in collaboration with NACOSTI. Government data, so this stays high-level.</p>
+        <p class="hm-role">My role: data analyst &amp; researcher</p>
+        <p class="hm-desc">Situational analysis of student-to-textbook ratios to optimize allocation across Kenyan schools, and data processing for ICT and Special Needs Education integration, plus science and innovation work toward the CBC system in collaboration with NACOSTI. Government data, so this stays high-level.</p>
       </div>
     </div>
 
-    <p class="work-note reveal">More client and coursework lives on my <a href="https://github.com/cece15" style="color:var(--flame-d);border-bottom:1px solid var(--flame)">GitHub</a> — and I'm happy to share what's shareable on request.</p>
+    <p class="work-note reveal">More client and coursework lives on my <a href="https://github.com/cece15" style="color:var(--flame-d);border-bottom:1px solid var(--flame)">GitHub</a>; I'm happy to share what's shareable on request.</p>
   </section>
 
   <!-- APPROACH -->
@@ -419,7 +415,7 @@
         <div class="beat">
           <p class="bt">I engineer</p>
           <h3>Pipelines that don't break.</h3>
-          <p>Production ETL across 34K+ students and 96K+ records — validated, logged, and version-controlled, not held together with hope.</p>
+          <p>Production ETL across 34K+ students and 96K+ records: validated, logged, and version-controlled, not held together with hope.</p>
         </div>
         <div class="beat">
           <p class="bt">I model</p>
@@ -429,10 +425,10 @@
         <div class="beat">
           <p class="bt">I translate</p>
           <h3>Dashboards people use.</h3>
-          <p>Built for parents, teachers, and policymakers — not just other data people. The insight only counts if someone can act on it.</p>
+          <p>Built for parents, teachers, and policymakers, not just other data people. The insight only counts if someone can act on it.</p>
         </div>
       </div>
-      <p class="philosophy">I'm a researcher, not just an analyst — I design and validate systems, I don't just report what happened. I build with modern tools, but I own every line; I ship what I understand.</p>
+      <p class="philosophy">I'm a researcher, not just an analyst: I design and validate systems, I don't just report what happened. I build with modern tools, but I own every line; I ship what I understand.</p>
     </div>
   </section>
 
@@ -444,22 +440,37 @@
       <div class="tnode reveal">
         <span class="yr">2017 · Kwale County, Kenya</span>
         <h3>Where the why began</h3>
-        <p>A community enrollment campaign turned a spreadsheet into a mission — and taught me that the most important variable is usually a person.</p>
+        <p>A community enrollment campaign turned a spreadsheet into a mission, and taught me that the most important variable is usually a person.</p>
       </div>
       <div class="tnode reveal">
-        <span class="yr">2018 – 2022 · Nairobi</span>
+        <span class="yr">2018 to 2022 · Nairobi</span>
         <h3>BSc Mathematics &amp; Computer Science, JKUAT</h3>
-        <p>Came for the rigor of mathematics, stayed for what it could do. Volunteer tutor on the side.</p>
+        <p>I came for the rigor of mathematics and stayed for what it could do. Volunteer tutor on the side.</p>
       </div>
       <div class="tnode reveal">
-        <span class="yr">2022 – 2023 · KICD, Nairobi</span>
+        <span class="yr">2022 to 2023 · KICD, Nairobi</span>
         <h3>Data Analyst &amp; Researcher, Kenya Institute of Curriculum Development</h3>
-        <p>National-scale student data and Special Needs Education fieldwork across Kenya, feeding real curriculum policy — 15+ analytical reports informing the national CBC transition.</p>
+        <p>National student data and special-needs fieldwork across Kenya, feeding real curriculum policy; 15+ analytical reports informing the national CBC transition.</p>
       </div>
       <div class="tnode reveal">
-        <span class="yr">2024 – present · GVSU, Michigan</span>
+        <span class="yr">2024 to present · GVSU, Michigan</span>
         <h3>MS Data Science &amp; Analytics</h3>
-        <p>Funded through a Blueprint Labs grant. Graduate Assistant Data Analyst at the Charter Schools Office — R pipelines, Power BI, and assessment data across 78 schools and 34K+ students.</p>
+        <p>Funded through a Blueprint Labs grant. Deepening the statistics, machine learning, and data engineering I now put straight into production work.</p>
+      </div>
+      <div class="tnode reveal">
+        <span class="yr">2025 to present · GVSU, Michigan</span>
+        <h3>Graduate Assistant</h3>
+        <p>One assistantship, two chapters across two departments.</p>
+        <div class="subroles">
+          <div class="sr">
+            <p class="d">Aug 2025 to Dec 2025 · Research department</p>
+            <p>Data scientist on a Blueprint Labs (MIT) research project, modeling educator burnout and retention.</p>
+          </div>
+          <div class="sr">
+            <p class="d">Jan 2026 to now · Data department</p>
+            <p>Data scientist at the Charter Schools Office: R pipelines, Power BI, and assessment data across 78 schools and 34K+ students.</p>
+          </div>
+        </div>
       </div>
       <div class="tnode reveal">
         <span class="yr">Now</span>
@@ -479,12 +490,12 @@
   <section class="section life" id="life">
     <p class="seyebrow gold reveal">Off the clock</p>
     <h2 class="shead reveal">A whole person, not just a résumé.</h2>
-    <p class="reveal">When I'm not in the data: yoga to think straight, anime for the stories, and adrenaline for the rest — I'm scared of heights and have done it anyway (the data suggests this will continue). My bucket list has <em>The Amazing Race</em> on it and all seven continents; I'm two down, Africa and Dubai. Faith keeps me grounded through all of it.</p>
+    <p class="reveal">When I'm not in the data: yoga to think straight, anime for the stories, and adrenaline for the rest. I'm scared of heights and have done it anyway (the data suggests this will continue). My bucket list has <em>The Amazing Race</em> on it and all seven continents; I'm three down so far: Africa, Asia, and North America. Faith keeps me grounded through all of it.</p>
     <div class="chips reveal">
       <span>Yoga</span>
       <span>Anime</span>
       <span>Heights (reluctantly)</span>
-      <span>2 / 7 continents</span>
+      <span>3 / 7 continents</span>
       <span>The Amazing Race, someday</span>
     </div>
   </section>
@@ -494,10 +505,10 @@
     <div class="halo2" aria-hidden="true"></div>
     <p class="seyebrow reveal" style="color:var(--flame-d)">Let's work together</p>
     <h2 class="reveal">Available Fall 2026.</h2>
-    <p class="lead reveal">Open to Data Analyst, Scientist, Analytics Engineer, and Data Engineer roles — across industries and open to relocation.</p>
-    <p class="roles2 reveal">Yes, I'll need visa sponsorship — and I've literally built tools to navigate it, so I know the process cold.</p>
+    <p class="lead reveal">Open to Data Analyst, Scientist, Analytics Engineer, and Data Engineer roles, across industries and open to relocation.</p>
+    <p class="roles2 reveal">Yes, I'll need visa sponsorship; I've literally built tools to navigate it, so I know the process cold.</p>
     <div class="cta reveal">
-      <a class="btn solid" href="https://linkedin.com/in/cynthia-mutua">Connect on LinkedIn</a>
+      <a class="btn solid" href="https://www.linkedin.com/in/cynthia-mutua/">Connect on LinkedIn</a>
       <a class="btn" href="https://github.com/cece15">See the code</a>
     </div>
     <a class="email reveal" href="mailto:cmutuaa@gmail.com">cmutuaa@gmail.com</a>
@@ -510,7 +521,7 @@
     <span>© 2026 Cynthia Mutua · Built with intention.</span>
     <span class="el">Helping people is the point. The rest is byproduct.</span>
     <span class="flinks">
-      <a href="https://linkedin.com/in/cynthia-mutua">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/cynthia-mutua/">LinkedIn</a>
       <a href="https://github.com/cece15">GitHub</a>
       <a href="mailto:cmutuaa@gmail.com">Email</a>
     </span>
@@ -518,7 +529,6 @@
 </footer>
 
 <script>
-  // tasteful scroll reveal
   (function(){
     var els=document.querySelectorAll('.reveal');
     if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
@@ -526,7 +536,6 @@
       entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
     },{threshold:.12,rootMargin:"0px 0px -8% 0px"});
     els.forEach(function(e){io.observe(e);});
-    // sticky nav border
     var bar=document.getElementById('top');
     window.addEventListener('scroll',function(){bar.classList.toggle('scrolled',window.scrollY>8);},{passive:true});
   })();
